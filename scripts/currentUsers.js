@@ -91,7 +91,7 @@ if(matchUser){
             </div>
             <input type="text" name="search" id="search" placeholder="Search X">
             <div class="search-bar">
-              <img src="/icon/setting-icon.png" alt="" class="js-tripple-icon">
+              <img src="icon/setting-icon.png" alt="" class="js-tripple-icon">
             </div>
           </div>
 
@@ -285,7 +285,7 @@ if(matchUser){
           </div>
 
             <div class="user-container">
-              <img src="/icon/google-logo-vector-rbg.png" alt="">
+              <img src="icon/google-logo-vector-rbg.png" alt="">
               <div class="user-details">
                 <h5>Messages</h5>
                 <p>You guys are welcome to Message Section</p>
@@ -303,7 +303,7 @@ if(matchUser){
       <div class="aside-header">
         <div class="aside-header-images">
           <div class="passport-container2 js-passport-container7">
-            <img src="/img/nurad.png" alt="">
+            <img src="img/nurad.png" alt="">
           </div>
           <div class="tripple-icon"><img src="/icon/triple dot.png" alt=""></div>
         </div>
@@ -391,12 +391,12 @@ if(matchUser){
 
   <footer>
     <div class="fixed-footer-content">
-      <img src="/icon/home-icon.png" id="home-icon" alt="">
-      <img src="/icon/search-icon-removebg-preview.png" id="search-icon" alt="">
-      <img src="/icon/grok-removebg-preview.png" id="grok-icon" alt="">
-      <img src="/icon/community-icon-removebg-preview.png" id="community-icon" alt="">
-      <img src="/icon/notification-removebg-preview.png" id="notification-icon" alt="">
-      <img src="/icon/messages-removebg-preview.png" id="message-icon" alt="">
+      <img src="icon/home-icon.png" id="home-icon" alt="">
+      <img src="icon/search-icon-removebg-preview.png" id="search-icon" alt="">
+      <img src="icon/grok-removebg-preview.png" id="grok-icon" alt="">
+      <img src="icon/community-icon-removebg-preview.png" id="community-icon" alt="">
+      <img src="icon/notification-removebg-preview.png" id="notification-icon" alt="">
+      <img src="icon/messages-removebg-preview.png" id="message-icon" alt="">
     </div>
   </footer>
 
