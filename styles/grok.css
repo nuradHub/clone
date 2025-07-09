@@ -1,0 +1,148 @@
+.grok-container{
+  display: none;
+}
+
+.grok-container .top-content1 .passport-container{
+  border: 1px solid whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+.grok-container .top-content1 .passport-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.top-content1 .grok-bar{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-content1 .grok-bar img{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.grok-middle-content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.grok-middle-content1 .recent-conversation{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 260px;
+  margin-bottom: 30px;
+}
+.grok-middle-content1 .recent-conversation img{
+  width: 10px;
+}
+.grok-middle-content1 .recent-conversation span{
+  font-size: 13px;
+  color: #717171;
+}
+
+.grok-middle-content1 .profilepic-display{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.grok-middle-content1 .profilepic-display input{
+  width: 250px;
+  background-color: #151515;
+  outline: none;
+  border: 1px solid #565656;
+  padding: 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+.grok-middle-content1 .image-creation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-image-container, .edit-image-container, .try-voice-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.create-image-container button, .edit-image-container button, .try-voice-container button{
+ width: 100px;
+ border-radius: 10px;
+ border: 1px solid #565656;
+ background-color: #151515;
+ color: white;
+ padding: 40px 0 20px 0;
+}
+.create-image-container img, .edit-image-container img, .try-voice-container img{
+ width: 20px;
+ position: absolute;
+ top: 5px;
+ left: 5px;
+}
+
+.ask-grok{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.ask-grok input{
+  width: 100%;
+  border-radius: 10px;
+  height: 120px;
+  color: white;
+  font-size: 19px;
+  padding: 20px 0 60px 10px;
+  background-color: #181818;
+  border: 1px solid #565656;
+}
+.ask-grok input:focus{
+  outline: none;
+}
+
+.asked-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.asked-icons img{
+  width: 20px;
+  border: 1px solid #565656;
+  border-radius: 20px;
+}
+.asked-icons .position1{
+  display: flex;
+  gap: 20px;
+}
+
+/* media query */
+
+@media screen and (min-width: 540px) {
+.grok-middle-content1 .recent-conversation{
+  margin-top: 120px;
+}
+.grok-middle-content1 .profilepic-display input{
+  width: 400px;
+}
+
+.create-image-container button, .edit-image-container button, .try-voice-container button{
+ width: 150px;
+}
+
+.ask-grok input{
+  width: 100%;
+  height: 120px;
+}
+
+}

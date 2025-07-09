@@ -1,0 +1,43 @@
+.message-container{
+  display: none;
+}
+
+.message-container .top-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message-container .top-content1 .passport-container{
+  border: 1px solid whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 13px;
+}
+.message-container .top-content1 .passport-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.top-content1 input{
+  flex: 1;
+  width: 0;
+  max-width: 350px;
+  padding-left: 15px;
+  background-color: #161616;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+}
+.top-content1 input:focus{
+ outline: none;
+}
+
+.top-content1 .message-bar img{
+  width: 20px;
+  margin-left: 10px;
+}
+

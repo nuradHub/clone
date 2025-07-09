@@ -1,0 +1,100 @@
+.search-container{
+  display: none;
+}
+.search-container .top-content1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.search-container .top-content1 input{
+  flex: 1;
+  width: 0;
+  max-width: 350px;
+  background-color:  #0f0f0f;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 15px;
+  padding-left: 15px;
+  color: white;
+  margin-left: 12px;
+}
+.top-content1 input:focus{
+  border: 1px solid black;
+}
+
+.search-bar img{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.search-middle-content1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.search-middle-content1 .foryou button, 
+.search-middle-content1 .trending button, 
+.search-middle-content1 .sport button, 
+.search-middle-content1 .news button, 
+.search-middle-content1 .entertainment button {
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  position: relative;
+  width: 60px;
+}
+
+.search-middle-content1 .foryou button::after, 
+.search-middle-content1 .trending button::after, 
+.search-middle-content1 .sport button::after, 
+.search-middle-content1 .news button::after, 
+.search-middle-content1 .entertainment button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  background-color: #0046df;
+  width: 0%;
+  transition: 0.2s ease;
+}
+.search-middle-content1 .foryou:hover button::after, 
+.search-middle-content1 .trending:hover button::after, 
+.search-middle-content1 .sport:hover button::after, 
+.search-middle-content1 .news:hover button::after, 
+.search-middle-content1 .entertainment:hover button::after{
+  width: 100%;
+}
+
+.search-middle-content2 img{
+  width: 100%;
+}
+.post-content2{
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  height: 200px;
+  background-color: #0f0f0f;
+}
+
+.news-container{
+  width: 90%;
+  margin: auto;
+}
+.news-container .user-details h5{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.news-container .user-details p{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}

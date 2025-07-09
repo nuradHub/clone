@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 40px;
+}
+.content-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content-container .contents{
+  flex: 1;
+  padding-bottom: 60px;
+}
+.top-content1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.top-content1 .user-profile-picture .passport-container{
+  border: 1px solid whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+.top-content1 .user-profile-picture .passport-container img{
+  width: 100%;
+  height: 100%;
+}
+.top-content1 .user-profile-picture img{
+  width: 40px;
+  border-radius: 30px;
+  background-color: white;
+}
+.top-content1 .twitter-icon img{
+  width: 30px;
+}
+.top-content1 .upgrade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top-content1 .upgrade h5{
+  font-weight: bold;
+  font-size: 15px;
+}
+.top-content1 .upgrade img{
+  width: 40px;
+}
+.top-content1 .timeline-setting{
+  right: 0;
+  width: 180px;
+  padding: 17px 20px 17px 10px;
+  position: absolute;
+  background-color: rgb(45, 45, 45);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.51s ease;
+  display: none;
+}
+
+.middle-content1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 20px;
+}
+.middle-content1 .foryou button, 
+.middle-content1 .following button{
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  position: relative;
+}
+.middle-content1 .foryou button::after, 
+.middle-content1 .following button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  background-color: #0046df;
+  width: 0%;
+  transition: 0.2s ease;
+}
+.middle-content1 .foryou:hover button::after, 
+.middle-content1 .following:hover button::after{
+  width: 100%;
+}
+
+.middle-content2{
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+.middle-content2 .x-users{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.middle-content2 .x-users h3{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.middle-content2 .x-users img{
+  width: 20px;
+}
+.middle-content2 p{
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+.middle-content2 .get-started-button button{
+  background-color: whitesmoke;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.user-container{
+  border: 1px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.user-container img{
+  width: 30px;
+  border-radius: 30px;
+  background-color: white;
+}
+.user-container h5{
+  font-weight: bold;
+}
+.user-container p{
+  color: whitesmoke;
+}
+.post-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  height: auto;
+  border: 1px solid whitesmoke;
+  background-color: rgb(11, 10, 10);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.post-content h4{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.post-content .video1 video{
+  width: 300px;
+}
+.post-content .video2 video{
+  width: 300px;
+}
+
+.aside-container{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  padding: 10px 0 0 10px;
+  width: 85%;
+  overflow: scroll;
+  scrollbar-width: none;
+  display: none;
+}
+.aside-header{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid  #717171;
+}
+.aside-header .aside-header-details{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.aside-header .aside-header-details h4{
+  font-weight: bold;
+  font-size: 15px;
+}
+.aside-header .aside-header-details p{
+  font-size: 13px;
+  color: #717171;
+}
+
+.aside-header .aside-about-user{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.aside-about-user .entertainment,
+.aside-about-user .fct,
+.aside-about-user .join-info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px;
+  color: #717171;
+  margin-bottom: 5px;
+}
+.aside-about-user .entertainment img,
+.aside-about-user .fct img,
+.aside-about-user .join-info img{
+  width: 12px;
+}
+.aside-about-user .entertainment img{
+  width: 10px;
+}
+
+.aside-about-user .join-info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.aside-about-user .join-info .born,
+.aside-about-user .join-info .join{
+  display: flex;
+  align-items: center;
+  font-size: 6px;
+  gap: 3px;
+}
+.aside-about-user .join-info span{
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.aside-header .aside-header-followers{
+  font-size: 12px;
+  color: #717171;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+.aside-header .aside-header-followers span{
+ color: white;
+ font-weight: bold;
+}
+.aside-header .aside-header-images{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.aside-header .aside-header-images .passport-container2 {
+  border: 1px solid whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+.aside-header .aside-header-images .passport-container2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.aside-header-images .tripple-icon img{
+  width: 25px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.aside-middle-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+  border-bottom: 2px solid  #717171;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.chat-content, .bookmark-content, .job-content, .list-content,
+.space-content, .monotization-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.monotization-content{
+  margin-bottom: 20px;
+}
+.chat-content img, .bookmark-content img, .job-content img, .list-content img,
+.space-content img, .monotization-content img {
+  width: 22px;
+}
+.job-content img{
+  width: 15px;
+  margin-left: 3px;
+}
+
+.chat-content span, .bookmark-content span, .job-content span, .list-content span,
+.space-content span, .monotization-content span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside-footer-section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.setting-support, .setting-privacy, .help-center, .file-upload {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.setting-support img, .setting-privacy img, .help-center img {
+  width: 17px;
+}
+.setting-support {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.setting-support #dropup{
+  display: none;
+  cursor: pointer;
+}
+.setting-support #dropdown{
+  cursor: pointer;
+}
+
+.setting-privacy, .help-center{
+  margin-bottom: 10px;
+}
+.aside-footer-content{
+  transition: 0.2s ease;
+  display: none;
+}
+.file-upload{
+  margin-top: 40px;
+}
+
+.aside-footer-section button{
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(22, 22, 22);
+  color: whitesmoke;
+}
+
+footer{
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fixed-footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.fixed-footer-content img{
+  width: 20px;
+}
+#grok-icon{
+  width: 40px;
+}
+
+
+/* media query */
+
+@media screen and (min-width: 540px) {
+
+.post-content{
+  height: 700px;
+}
+
+.post-content .video1 video{
+  width: 400px;
+}
+.post-content .video2 video{
+  width: 400px;
+}
+
+}

@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(26, 26, 26);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-family: Arial;
+  position: relative;
+  height: 100vh;
+}
+.container{
+  height: 650px;
+}
+.container .twitter-icon img{
+  width: 30px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.create-account-header{
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.sign-in-options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.sign-in-options a button {
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  width: 350px;
+  background-color:white;
+  height: 50px;
+  cursor: pointer;
+}
+.sign-in-options a .google-icon {
+  background-image: url("/icon/google-logo-vector-rbg.png");
+  background-repeat: no-repeat;
+  background-position: 85%;
+  background-size: 30px;
+}
+.sign-in-options a .apple-icon {
+  background-image: url("/icon/apple-logo-vector-rbg.png");
+  background-repeat: no-repeat;
+  background-position: 20%;
+  background-size: 30px;
+  margin-bottom: 15px;
+}
+
+.or-content{
+  font-size: 10px;
+  margin-bottom: 15px;
+  color: rgb(111, 111, 111);
+}
+.or-content::before, 
+.or-content::after{
+  content: "";
+  background-color:rgb(111, 111, 111);
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.create-account{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-account button,
+.already-have-account .sign-in{
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  width: 300px;
+  background-color:rgb(255, 255, 255);
+  height: 50px;
+  cursor: pointer;
+}
+
+.sign-up-agreement p{
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.sign-up-agreement p a{
+  text-decoration: none;
+  color: blue;
+}
+.sign-up-agreement p a:hover{
+  text-decoration: underline;
+}
+
+.already-have-account{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.already-have-account h4{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.already-have-account .sign-in{
+  color:rgb(0, 98, 255);
+  margin-bottom: 20px;
+}
+.already-have-account a .get-grok{
+  color:white;
+  outline: none;
+  background-color: black;
+  border: 1px solid rgb(111, 111, 111);
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  width: 350px;
+  background-color:rgb(0, 0, 0);
+  height: 50px;
+  cursor: pointer;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.footer-content a{
+ color: white;
+ text-decoration: none;
+ font-size: 11px;
+}
+.footer-content a:hover{
+ text-decoration: underline;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 344px) {
+.sign-in-options a button {
+  padding: 5px;
+  width: 250px;
+  height: 40px;
+}
+
+.or-content::before, 
+.or-content::after{
+  width: 10%;
+}
+.create-account button,
+.already-have-account .sign-in{
+  width: 250px;
+  height: 40px;
+}
+
+.sign-up-agreement p{
+  width: 250px;
+  font-size: 8px;
+}
+
+.already-have-account .sign-in{
+  color:rgb(0, 98, 255);
+  margin-bottom: 20px;
+}
+.already-have-account a .get-grok{
+  width: 250px;
+  height: 40px;
+}
+
+.footer-content a{
+ font-size: 5px;
+}
+
+}

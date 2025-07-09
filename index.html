@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/newaccount.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="icon" href="icon/twitter-logo-vector-rbg.png">
+</head>
+<body>
+  <div class="container">
+    <div class="twitter-icon">
+      <img src="icon/twitter-logo-vector-rbg.png" alt="">
+    </div>
+    <div class="create-account-header">
+      <h4>Create an account</h4>
+    </div>
+    <div class="sign-in-options">
+      <a href="">
+        <button class="google-icon">Sign in with google</button>
+      </a>
+      
+      <a href="">
+        <button class="apple-icon"> Sign up with Apple</button>
+      </a>
+    </div>
+    <div class="or-content">
+     OR
+    </div>
+    <div class="create-account js-create-account">
+      <button class="js-create-account" type="button">Create account</button>
+
+      <div class="sign-up-agreement">
+        <p>By signing up, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>. including <a href="">Cookie Use</a> </p>
+      </div>
+    </div>
+    
+    <div class="already-have-account">
+      <h4>Already have an account?</h4>
+      <button class="sign-in js-sign-in" type="button">Sign in</button>
+
+      <a href="">
+        <button class="get-grok">Get Grok</button>
+      </a>
+    </div>
+  </div>
+
+  <section class="create-new-account js-create-new-account">
+    <div class="new-account-container">
+      <div class="close-menu-icon js-close-menu">
+        <img src="icon/close-menu-icon.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="new-account-content">
+      <div class="twitter-icon">
+          <img src="icon/twitter-logo-vector-rbg.png" alt="">
+      </div>
+    </div>
+      <div class="create-account-details">
+        <div class="account-info">
+          <h3>Create your account</h3>
+        </div>
+        <div class="input-name-email">
+         <div class="name-input">
+           <input type="text" name="name" id="name" maxlength="50" placeholder="" required>
+           <label for="name">Full Name</label>
+          <div class="name-label">
+            <span class="js-count">0</span>
+            <span>/50</span>
+          </div>
+         </div>
+
+         <div class="username-input">
+           <input type="text" name="username" id="username" maxlength="50" placeholder="" required>
+           <label for="username">username</label>
+         </div>
+
+         <div class="email-input">
+           <input type="email" name="email" id="email" placeholder="" required>
+           <label for="email">Email</label>
+           <p class="notify-failure js-notify-failure">Invalid Email</p>
+         </div>
+        </div>
+
+        <div class="summary-details">
+          <h5>Date of birth</h5>
+          <p>This will not be shown publicly, Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+
+          <div class="dob-button">
+
+              <select id="month" required>
+                <option value="" selected disabled hidden>Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+
+              <select id="day" required>
+                
+              </select>
+
+              <select id="year" required>
+                
+              </select>
+            
+          </div>
+        </div>
+        <p class="notify-success js-notify-success">Account Created Successfully! Kindly Sign in...</p>
+        <button class="next-button js-next-button" type="button">Next</button>
+
+        <div class="existing-user js-existing-user">Email or Username already exist</div>
+      </div>
+  
+  </section>
+
+
+  <section class="signin js-signin">
+    <div class="signin-container">
+      <div class="close-menu-icon js-close-icon">
+        <img src="icon/close-menu-icon.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="signin-content">
+      <div class="twitter-icon">
+          <img src="icon/twitter-logo-vector-rbg.png" alt="">
+      </div>
+    </div>
+      <div class="signin-details">
+        <div class="signin-info">
+          <h3>Sign in to X</h3>
+        </div>
+
+      <div class="sign-in-option">
+        <a href="">
+          <button class="google-icons" type="button">Sign in with google</button>
+        </a>
+        
+        <a href="">
+          <button class="apple-icons" type="button"> Sign up with Apple</button>
+        </a>
+      </div>
+
+      <div class="or-contents">or</div>
+
+      <div class="floating-label">
+          <input type="email" name="logins" id="logins" placeholder="" required>
+        <label for="logins">Email address or username</label>
+      </div>
+
+      <button class="sign-button js-signin-button" type="button">Next</button>
+    
+      <button class="forgot-password-button js-forgot-password-button" type="button">Forgot password?</button>
+
+      <div class="account-button">
+        <h4 >Don't have an account?</h4>
+        <button class="js-account-button" type="button">Sign up</button>
+      </div>
+
+      </div>
+      
+     <p class="user-not-found js-user">Sorry! We could not find your account</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+    <a href="">About</a>
+    <hr>
+    <a href="">Get the X app</a>
+    <hr>
+    <a href="">Get the Grok app</a>
+    <hr>
+    <a href="">Careers</a>
+    <hr>
+    <a href="">Terms of Service</a>
+    <hr>
+    <a href="">Privacy Policy</a>
+    <hr>
+    <a href="">Cookie Policy</a>
+    <hr>
+    <a href="">Developers</a>
+    <hr>
+    <a href="">Advertising</a>
+    <hr>
+    <a href="">Settings</a>
+    <hr>
+    <a href="">&copy; 2025 X Corp.</a>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/script.js"></script>
+  <script type="module" src="scripts/login.js"></script>
+</body>
+</html>
